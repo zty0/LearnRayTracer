@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("RayTracerProgram")
+project ("RayTracer")
 
 # Include sub-projects.
-add_subdirectory ("RayTracerProgram")
+add_subdirectory ("RayTracer")

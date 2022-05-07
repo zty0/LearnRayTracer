@@ -1,5 +1,7 @@
-﻿// RayTracerProgram.cpp : Defines the entry point for the application.
+﻿// main.cpp : Defines the entry point for the application.
 //
+
+#include <iostream>
 
 #ifndef UNICODE
 #define UNICODE
@@ -15,7 +17,6 @@
 #include <d2d1.h>
 #pragma comment(lib, "d2d1")
 
-#include "RayTracerProgram.h"
 #include <glm/glm.hpp>
 #include <glm/ext.hpp>
 
@@ -456,7 +457,7 @@ private:
 		scene.addGeometry(&sphere);
 
 		Sphere sphere1 = Sphere(glm::vec3(40.f, 0, -530.f), 20.f);
-		Material* mat1 = new Material(glm::vec3(0.f, 0.f, 190.f), glm::vec3(180.f), 0.f);
+		Material* mat1 = new Material(glm::vec3(100.f, 0.f, 190.f), glm::vec3(180.f), 0.f);
 		sphere1.attachMaterial(mat1);
 		scene.addGeometry(&sphere1);
 		Plain plain = Plain(glm::vec3(0, 1.f, 0), glm::vec3(0, -20.f, 0.f));
